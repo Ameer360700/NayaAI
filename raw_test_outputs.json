@@ -1,0 +1,56 @@
+[
+  {
+    "case": "T1_refund",
+    "input": "I paid ₹3,499 for headphones on 2 November. The refund is pending.",
+    "issue": "refund",
+    "platform": "ShopApp",
+    "evidence": "invoice, payment screenshot, support chat",
+    "expected_focus": "refund follow-up",
+    "raw_output": {
+      "detected_issue_from_text": "refund",
+      "guidance": [
+        "Save order confirmation, invoice, payment proof and relevant photos/chats.",
+        "Write to the seller and platform grievance officer, stating the remedy requested.",
+        "If unresolved, register a pre-litigation grievance with the National Consumer Helpline at 1915 or consumerhelpline.gov.in.",
+        "If still unresolved, review filing options on e-jagriti.gov.in and consider advice from a qualified consumer-law practitioner."
+      ],
+      "warning": "General information only; verify facts and consult a lawyer for complex or urgent matters."
+    }
+  },
+  {
+    "case": "T2_non_delivery",
+    "input": "My order was not delivered even though payment was collected.",
+    "issue": "non_delivery",
+    "platform": "QuickCart",
+    "evidence": "order confirmation, payment proof",
+    "expected_focus": "non-delivery",
+    "raw_output": {
+      "detected_issue_from_text": "non_delivery",
+      "guidance": [
+        "Save order confirmation, invoice, payment proof and relevant photos/chats.",
+        "Write to the seller and platform grievance officer, stating the remedy requested.",
+        "If unresolved, register a pre-litigation grievance with the National Consumer Helpline at 1915 or consumerhelpline.gov.in.",
+        "If still unresolved, review filing options on e-jagriti.gov.in and consider advice from a qualified consumer-law practitioner."
+      ],
+      "warning": "General information only; verify facts and consult a lawyer for complex or urgent matters."
+    }
+  },
+  {
+    "case": "T3_defective",
+    "input": "The mixer arrived damaged and the seller has not responded.",
+    "issue": "defective",
+    "platform": "HomeStore",
+    "evidence": "invoice, unboxing video, photos",
+    "expected_focus": "defective product",
+    "raw_output": {
+      "detected_issue_from_text": "defective",
+      "guidance": [
+        "Save order confirmation, invoice, payment proof and relevant photos/chats.",
+        "Write to the seller and platform grievance officer, stating the remedy requested.",
+        "If unresolved, register a pre-litigation grievance with the National Consumer Helpline at 1915 or consumerhelpline.gov.in.",
+        "If still unresolved, review filing options on e-jagriti.gov.in and consider advice from a qualified consumer-law practitioner."
+      ],
+      "warning": "General information only; verify facts and consult a lawyer for complex or urgent matters."
+    }
+  }
+]
